@@ -38,6 +38,14 @@ header {
     border-bottom: 1px solid rgb(112 112 112 / 29%);
 }
 
+
+.rtl{
+    .lets-talk{
+        left: 50px;
+        right: auto;
+    }
+}
+
 .lets-talk {
     width: 70px;
     height: 70px;
@@ -55,6 +63,7 @@ header {
     text-transform: uppercase;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transition: all 0.3s ease-out;
+    z-index: 999;
 
     &:hover {
         background-color: var(--black);
@@ -148,7 +157,7 @@ header {
         animation: zoomin 30s linear;
         animation-fill-mode: forwards;
         background-origin: center;
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
     }
 }
